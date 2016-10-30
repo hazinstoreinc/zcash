@@ -425,7 +425,7 @@ static bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& rese
     }
 
     // Remove key from key pool
-    reservekey.KeepKey();
+    //reservekey.KeepKey(); //wb - changed for mining wallet
 
     // Track how many getdata requests this block gets
     {
